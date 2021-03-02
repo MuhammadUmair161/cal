@@ -1,0 +1,58 @@
+*{
+    font-family: 'RocknRoll One', sans-serif;
+}
+body{
+    background-image:url(https://images.pexels.com/photos/240163/pexels-photo-240163.jpeg?cs=srgb&dl=pexels-deepak-gautam-240163.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.container{
+    background-image:url(https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?cs=srgb&dl=pexels-lumn-167682.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+}
+
+.btn{
+    font-size: 1.5em;
+    color: #343a40;
+    background-color: aliceblue;
+    width: 100%;
+} 
+
+.btn-:hover{
+    color:aliceblue ;
+    background-color:#343a40 ;
+} 
+#clear{
+    color: rgba(233, 16, 16, 0.932);
+}
+
+#clear:hover{
+    background-color: rgba(233, 16, 16, 0.932);
+    color: #fff;
+}
+
+
+#ans:hover{
+    background-color:#21ac38ef;
+    color: #fff;
+} 
+
+h1{
+    color: aliceblue;
+    /* text-transform: uppercase; */
+}
+
+h1 span{
+    color: #343a40;
+}
+
+#history{
+    max-height: 18vh;
+    border: solid 2px #343a40;
+    background: transparent;
+    color: aliceblue;
+    text-align: left;
+}

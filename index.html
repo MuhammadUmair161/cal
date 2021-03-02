@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/extra.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+                integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+                crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="container pt-4 pb-4">
+                <h2>Calculator</h2>
+                <h6>never give up</h6>
+                <form name="calc">
+                        <div class="row">
+                                <div class="col-lg-12">
+                                        <input id="screen" class="w-100 btn p-2 " type="text" name="text" readonly>
+                                </div>
+                        </div>
+
+                        <div class="row">
+
+                                <div class="col-md-6  bg-secondry"><span id="clear" class="btn- btn  mt-4 "
+                                                onclick="calc.text.value =''">C</span></div>
+                                <!-- <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 " onclick="his();">save</span></div> -->
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 " onclick="back();"><i
+                                                        class="fa fa-chevron-circle-left" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='/'">%</span></div>
+
+
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='1'">1</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='2'">2</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='3'">3</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='-'">-</span></div>
+
+
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='4'">4</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='5'">5</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='6'">6</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='*'">x</span></div>
+
+
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='7'">7</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='8'">8</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='9'">9</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='+'">+</span></div>
+
+
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='0'">0</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='00'">00</span></div>
+                                <div class="col-md-3  bg-secondry"><span class="btn- btn  mt-4 "
+                                                onclick="calc.text.value +='.'">.</span></div>
+                                <div class="col-md-3  bg-secondry"><span id="ans" class="btn- btn  mt-4 "
+                                                onclick="calc.text.value = eval(calc.text.value)">=</span></div>
+
+                                <div class="col-md-12  bg-secondry">
+                                        <h1 class="pl-4 ml-4 mt-4">His<span>tory</span></h1><span id="history"
+                                                class="btn overflow-auto  mt-4"></span>
+                                </div>
+                        </div>
+
+                </form>
+
+        </div>
+
+
+        <script src="js/extra.js"></script>
+</body>
+
+</html>

@@ -1,13 +1,13 @@
 var bt = document.getElementById('ans');
 // var textIn = document.getElementById('screen');
-
 var textIn = document.calc.text.value;
 var storage = document.getElementById('history');
 
 bt.addEventListener('click', function()
 {
     var data = document.createElement('p');
-    data.innerText = textIn.Value;
+    data.innerText = textIn.value;
+    console.log(textIn);
     storage.appendChild(data);
 
     data.addEventListener('dblclick',function()
